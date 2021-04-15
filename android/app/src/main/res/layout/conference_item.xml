@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/round_rectangle_background"
+    android:layout_marginBottom="20dp"
+    android:layout_marginHorizontal="15dp"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/dolbyVoice"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/oval_background"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/dolby_voice_indicator_accs"
+        tools:backgroundTint="@color/dolby_blue"/>
+
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/dolbyVoice"
+        app:layout_constraintStart_toStartOf="@id/dolbyVoice"
+        app:layout_constraintTop_toBottomOf="@id/dolbyVoice"
+        android:textColor="@color/black"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        tools:text="00:12" />
+
+    <View
+        android:id="@+id/verticalLine"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/duration"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginVertical="2dp"/>
+
+    <TextView
+        android:id="@+id/conferenceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/verticalLine"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        tools:text="Conference name"/>
+
+    <TextView
+        android:id="@+id/ownerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/conferenceName"
+        app:layout_constraintStart_toEndOf="@id/verticalLine"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/dolby_dark_gray"
+        tools:text="Amy, being interviewed"/>
+
+    <Button
+        android:id="@+id/join_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:minWidth="10dp"
+        android:text="@string/join_button"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/dolby_purple"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

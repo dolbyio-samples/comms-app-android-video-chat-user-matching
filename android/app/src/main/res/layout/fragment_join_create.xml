@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.JoinCreateFragment"
+    android:focusableInTouchMode="true"
+    android:clickable="true">
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/ic_help_outline_24px"
+        android:backgroundTint="@color/dolby_light_blue"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/info_button_accs" />
+
+    <TextView
+        android:id="@+id/prompt_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info"
+        app:layout_constraintBottom_toTopOf="@id/new_label"
+        android:text="@string/create_room_prompt"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/new_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_id_label"
+        android:labelFor="@id/new_id"
+        app:layout_constraintTop_toBottomOf="@id/prompt_create"
+        app:layout_constraintBottom_toTopOf="@id/new_id"
+        app:layout_constraintStart_toStartOf="@id/new_id"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/new_id_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/id_error"
+        app:layout_constraintTop_toBottomOf="@id/prompt_create"
+        app:layout_constraintBottom_toTopOf="@id/new_id"
+        app:layout_constraintEnd_toEndOf="@id/new_id"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/dolby_red"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/new_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/new_label"
+        app:layout_constraintBottom_toTopOf="@id/create_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/round_rectangle_background"
+        android:layout_marginHorizontal="60dp"
+        android:inputType="textCapWords"
+        android:paddingVertical="5dp"
+        android:importantForAutofill="no"
+        android:paddingStart="8dp"
+        android:paddingEnd="2dp"/>
+
+    <TextView
+        android:id="@+id/private_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/private_toggle"
+        app:layout_constraintTop_toBottomOf="@id/new_id"
+        app:layout_constraintStart_toStartOf="@id/new_id"
+        android:layout_marginTop="15dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/private_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/private_text"
+        app:layout_constraintBottom_toBottomOf="@id/private_text"
+        app:layout_constraintStart_toEndOf="@id/private_text"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        />
+
+    <TextView
+        android:id="@+id/dlby_voice_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dolby_voice_toggle"
+        app:layout_constraintTop_toBottomOf="@id/new_id"
+        app:layout_constraintEnd_toStartOf="@id/dlby_voice_switch"
+        android:layout_marginTop="15dp"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/dlby_voice_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/dlby_voice_text"
+        app:layout_constraintBottom_toBottomOf="@id/dlby_voice_text"
+        app:layout_constraintEnd_toEndOf="@id/new_id"
+        android:scaleX="0.75"
+        android:scaleY="0.75"/>
+
+    <ProgressBar
+        android:id="@+id/loadConference"
+        app:layout_constraintTop_toBottomOf="@id/create_button"
+        app:layout_constraintBottom_toTopOf="@id/prompt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/progressBar"
+        android:indeterminateTint="@color/dolby_blue"
+        android:background="@drawable/loader_background"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/create_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/create_button"
+        app:layout_constraintTop_toBottomOf="@id/new_id"
+        app:layout_constraintBottom_toTopOf="@id/prompt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="135dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/dolby_light_blue"
+        app:cornerRadius="50dp"
+        android:textColor="@color/dolby_dark_gray"
+        />
+
+
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/create_button"
+        app:layout_constraintBottom_toTopOf="@id/room_label"
+        android:text="@string/join_prompt_1"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="32sp"/>
+
+
+    <TextView
+        android:id="@+id/room_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/room_id_prompt"
+        android:labelFor="@id/room_id"
+        app:layout_constraintTop_toBottomOf="@id/prompt"
+        app:layout_constraintBottom_toTopOf="@id/room_id"
+        app:layout_constraintStart_toStartOf="@id/room_id"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/id_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/id_error"
+        app:layout_constraintTop_toBottomOf="@id/prompt"
+        app:layout_constraintBottom_toTopOf="@id/room_id"
+        app:layout_constraintEnd_toEndOf="@id/room_id"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/dolby_red"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/room_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/room_label"
+        app:layout_constraintBottom_toTopOf="@id/join_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/round_rectangle_background"
+        android:layout_marginHorizontal="60dp"
+        android:inputType="textCapWords"
+        android:paddingVertical="5dp"
+        android:importantForAutofill="no"
+        android:paddingStart="8dp"
+        android:paddingEnd="2dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/join_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/join_button"
+        app:layout_constraintTop_toBottomOf="@id/room_id"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="135dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/dolby_light_blue"
+        app:cornerRadius="50dp"
+        android:textColor="@color/dolby_dark_gray"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

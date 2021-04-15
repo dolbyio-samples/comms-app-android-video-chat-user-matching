@@ -1,0 +1,20 @@
+{
+  "name": "interactivity_demo_server",
+  "version": "1.0.0",
+  "description": "server for interactivity demo app on Android ",
+  "main": "token-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Megan Ren",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "15.7.0"
+  }
+}

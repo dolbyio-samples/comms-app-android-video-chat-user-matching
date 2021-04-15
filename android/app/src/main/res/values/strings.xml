@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Interactivity Demo</string>
+    <string name="name_prompt">What\'s your name?</string>
+    <string name="being_interviewed">Being interviewed</string>
+    <string name="interviewing">Interviewing</string>
+    <string name="go_button">GO</string>
+    <string name="let_s_practice_prompt">LET\'S PRACTICE</string>
+    <string-array name="roles_array">
+        <item>Looking to practice…</item>
+        <item>Being interviewed</item>
+        <item>Interviewing</item>
+    </string-array>
+    <string name="ROLE_EXTRA">com.example.interactivitydemo.role</string>
+    <string name="NAME_EXTRA">com.example.interactivitydemo.name</string>
+    <string name="CONF_NAME_EXTRA">com.example.interactivitydemo.confName</string>
+    <string name="join_button">Join</string>
+    <string name="browse_button">Browse</string>
+    <string name="app_title">Interview Practice App</string>
+    <string name="join_prompt_1">Or, join a private one</string>
+    <string name="room_id_prompt">Room name:</string>
+    <string name="hang_up_button_accs">hang up button</string>
+    <string name="mute_audio_button_accs">mute audio button</string>
+    <string name="mute_video_button_accs">mute video button</string>
+    <string name="practice_prompt">Practice %1$s someone new!</string>
+    <string name="dolby_voice_indicator_accs">dolby voice indicator</string>
+    <string name="error_initializing">Error connecting to server</string>
+    <string name="retry_button">Retry</string>
+    <string name="info_dialog_title">What is this app for?</string>
+    <string name="info_dialog_message">This is a sample app demonstrating how to use the
+        Dolby.io Interactivity APIs for video conferencing in an Android application.\n\n
+        Join a private room if you know the name, or create a new room on this page. On the Browse page,
+        view and join active rooms made by users looking to practice the opposite skill as you.</string>
+    <string name="info_dialog_button">Got it!</string>
+    <string name="info_button_accs">info button</string>
+    <string name="create_room_prompt">Create a practice room</string>
+    <string name="new_id_label">New room name:</string>
+    <string name="create_button">Create</string>
+    <string name="private_toggle">Private</string>
+    <string name="dolby_voice_toggle">Use Dolby Voice</string>
+    <string name="no_active_rooms">No rooms currently active. \nWhy not create one?</string>
+    <string name="names_placeholder">%1$s, %2$s</string>
+    <string name="id_error">ID cannot contain "#"</string>
+    <string name="id_error_length">ID is too long</string>
+    <string name="exit_label">Exit</string>
+    <string name="preference_file_key">com.example.interactivitydemo.PREF_FILE_KEY</string>
+    <string name="saved_role_key">ROLE</string>
+    <string name="saved_name_key">NAME</string>
+</resources>
