@@ -1,18 +1,18 @@
+[![License](https://img.shields.io/github/license/dolbyio-samples/blog-android-audio-recording-examples)](LICENSE)
+
 # Dolby.io Interactivity APIs Demo - Android Interview App
+The repository is a sample Android application that demonstrates the integration of Dolby.io's APIs for audio processing in an interview app scenario. 
 
-## About
-
+## Overview
 This sample project consists of an Android app and a Node.js server. Together, they facilitate interview practice through one-on-one video conferencing. This project leverages [Dolby.io](dolby.io) Interactivity APIs and SDK to provide conferencing, and uses its [REST APIs](https://dolby.io/developers/interactivity-apis/reference/rest-apis/authentication) to authenticate and monitor the state of the app. 
 
-## Running the app yourself
-
-### Prerequisites
+## Requirements
 
 You will need Android Studio (preferably 4.0 or higher, although 3.6 is the absolute minimum). If you don't have an emulator installed, set that up (instructions [here](https://developer.android.com/studio/run/managing-avds)). You should also have the necessary SDK Platforms - the Android 11.0, API 30 SDK should be fine for testing purposes (from Android Studio, go to Tools > SDK Manager to download).
 
 For the server, all you need are recent versions of Node.js and npm (refer to the package-lock file for more information). 
 
-### Android steps
+## Getting Started
 
 Next, clone this repository into a directory of your choice. 
 
@@ -116,5 +116,40 @@ heroku open
 
 in the directory where your server code lives and copy the resulting URL. 
 
-Happy mock interviewing! 
+Happy mock interviewing!
 
+# Report a Bug 
+In the case any bugs occur, report it using Github issues, and we will see to it. 
+
+# Forking
+We welcome your interest in trying to experiment with our repos. 
+
+# Feedback 
+If there are any suggestions or if you would like to deliver any positive notes, feel free to open an issue and let us know!
+
+# Learn More
+For a deeper dive, we welcome you to review the following:
+ - [Communications API](https://docs.dolby.io/communications-apis/docs)
+ - [Getting Started with Android SDK](https://docs.dolby.io/communications-apis/docs/getting-started-with-android)
+ - [Build a Podcast Recording App for Android using the Dolby.io Monitor API](https://dolby.io/blog/build-a-podcast-recording-app-for-android-using-the-dolby-io-monitor-api/)
+ - [Add Conference Audio Moderation Using Hive.ai and the Dolby.io Android SDK](https://dolby.io/blog/add-conference-audio-moderation-using-hive-ai-and-the-dolby-io-android-sdk/)
+ - [Blog Session - Communications API](https://dolby.io/blog/category/communications/)
+
+# About Dolby.io
+Dolby.io is a new developer platform by Dolby Laboratories using decades of Dolby's sight and sound technology. Learn how to integrate APIs for real-time streaming, communications, and media processing solutions. You can find the tools, documentation, and sample projects to help you get started.
+
+<div align="center">
+  
+[![Dolby.io Home](https://img.shields.io/badge/-HomePage-yellowgreen)](https://dolby.io/)
+&nbsp; &nbsp; &nbsp;
+[![Dolby.io Documentation](https://img.shields.io/badge/-Our%20Documentation-orange)](https://docs.dolby.io/)
+&nbsp; &nbsp; &nbsp;
+
+[![@dolbyio on LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/dolbyio)
+&nbsp; &nbsp; &nbsp;
+[![@dolbyio on YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@DolbyIO/)
+&nbsp; &nbsp; &nbsp;
+[![@dolbyio on Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/DolbyIO/)
+&nbsp; &nbsp; &nbsp;
+  
+</div>
