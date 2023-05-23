@@ -1,10 +1,10 @@
 [![License](https://img.shields.io/github/license/dolbyio-samples/blog-android-audio-recording-examples)](LICENSE)
 
-# Dolby.io Interactivity APIs Demo - Android Interview App
+# Dolby.io Communications APIs Demo - Android Interview App
 The repository is a sample Android application that demonstrates the integration of Dolby.io's APIs for audio processing in an interview app scenario. 
 
 ## Overview
-This sample project consists of an Android app and a Node.js server. Together, they facilitate interview practice through one-on-one video conferencing. This project leverages [Dolby.io](dolby.io) Interactivity APIs and SDK to provide conferencing, and uses its [REST APIs](https://dolby.io/developers/interactivity-apis/reference/rest-apis/authentication) to authenticate and monitor the state of the app. 
+This sample project consists of an Android app and a Node.js server. Together, they facilitate interview practice through one-on-one video conferencing. This project leverages [Dolby.io](dolby.io) Communications APIs and SDK to provide conferencing, and uses its [REST APIs](https://docs.dolby.io/communications-apis/reference/authentication-api) to authenticate and monitor the state of the app. 
 
 ## Requirements
 
