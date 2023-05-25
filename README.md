@@ -1,5 +1,3 @@
-[![License](https://img.shields.io/github/license/dolbyio-samples/blog-android-audio-recording-examples)](LICENSE)
-
 # Dolby.io Communications APIs Demo - Android Interview App
 The repository is a sample Android application that demonstrates the integration of Dolby.io's APIs for audio processing in an interview app scenario. 
 
