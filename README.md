@@ -1,18 +1,16 @@
-# Dolby.io Interactivity APIs Demo - Android Interview App
+# Dolby.io Communications APIs Demo - Android Interview App
+The repository is a sample Android application that demonstrates the integration of Dolby.io's APIs for audio processing in an interview app scenario. 
 
-## About
+## Overview
+This sample project consists of an Android app and a Node.js server. Together, they facilitate interview practice through one-on-one video conferencing. This project leverages [Dolby.io](dolby.io) Communications APIs and SDK to provide conferencing, and uses its [REST APIs](https://docs.dolby.io/communications-apis/reference/authentication-api) to authenticate and monitor the state of the app. 
 
-This sample project consists of an Android app and a Node.js server. Together, they facilitate interview practice through one-on-one video conferencing. This project leverages [Dolby.io](dolby.io) Interactivity APIs and SDK to provide conferencing, and uses its [REST APIs](https://dolby.io/developers/interactivity-apis/reference/rest-apis/authentication) to authenticate and monitor the state of the app. 
-
-## Running the app yourself
-
-### Prerequisites
+## Requirements
 
 You will need Android Studio (preferably 4.0 or higher, although 3.6 is the absolute minimum). If you don't have an emulator installed, set that up (instructions [here](https://developer.android.com/studio/run/managing-avds)). You should also have the necessary SDK Platforms - the Android 11.0, API 30 SDK should be fine for testing purposes (from Android Studio, go to Tools > SDK Manager to download).
 
 For the server, all you need are recent versions of Node.js and npm (refer to the package-lock file for more information). 
 
-### Android steps
+## Getting Started
 
 Next, clone this repository into a directory of your choice. 
 
@@ -116,5 +114,42 @@ heroku open
 
 in the directory where your server code lives and copy the resulting URL. 
 
-Happy mock interviewing! 
+Happy mock interviewing!
 
+# Report a Bug 
+In the case any bugs occur, report it using Github issues, and we will see to it. 
+
+# Forking
+We welcome your interest in trying to experiment with our repos. 
+
+# Feedback 
+If there are any suggestions or if you would like to deliver any positive notes, feel free to open an issue and let us know!
+
+# Learn More
+For a deeper dive, we welcome you to review the following:
+ - [Communications API](https://docs.dolby.io/communications-apis/docs)
+ - [Getting Started with Android SDK](https://docs.dolby.io/communications-apis/docs/getting-started-with-android)
+ - [Build a Podcast Recording App for Android using the Dolby.io Monitor API](https://dolby.io/blog/build-a-podcast-recording-app-for-android-using-the-dolby-io-monitor-api/)
+ - [Add Conference Audio Moderation Using Hive.ai and the Dolby.io Android SDK](https://dolby.io/blog/add-conference-audio-moderation-using-hive-ai-and-the-dolby-io-android-sdk/)
+ - [Blog Session - Communications API](https://dolby.io/blog/category/communications/)
+
+# About Dolby.io
+
+Using decades of Dolby's research in sight and sound technology, Dolby.io provides APIs to integrate real-time streaming, voice & video communications, and file-based media processing into your applications. [Sign up for a free account](https://dashboard.dolby.io/signup/) to get started building the next generation of immersive, interactive, and social apps.
+
+<div align="center">
+  <a href="https://dolby.io/" target="_blank"><img src="https://img.shields.io/badge/Dolby.io-0A0A0A?style=for-the-badge&logo=dolby&logoColor=white"/></a>
+&nbsp; &nbsp; &nbsp;
+  <a href="https://docs.dolby.io/" target="_blank"><img src="https://img.shields.io/badge/Dolby.io-Docs-0A0A0A?style=for-the-badge&logoColor=white"/></a>
+&nbsp; &nbsp; &nbsp;
+  <a href="https://dolby.io/blog/category/developer/" target="_blank"><img src="https://img.shields.io/badge/Dolby.io-Blog-0A0A0A?style=for-the-badge&logoColor=white"/></a>
+</div>
+
+<div align="center">
+&nbsp; &nbsp; &nbsp;
+  <a href="https://youtube.com/@dolbyio" target="_blank"><img src="https://img.shields.io/badge/YouTube-red?style=flat-square&logo=youtube&logoColor=white" alt="Dolby.io on YouTube"/></a>
+&nbsp; &nbsp; &nbsp; 
+  <a href="https://twitter.com/dolbyio" target="_blank"><img src="https://img.shields.io/badge/Twitter-blue?style=flat-square&logo=twitter&logoColor=white" alt="Dolby.io on Twitter"/></a>
+&nbsp; &nbsp; &nbsp;
+  <a href="https://www.linkedin.com/company/dolbyio/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="Dolby.io on LinkedIn"/></a>
+</div>
