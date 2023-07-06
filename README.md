@@ -17,7 +17,7 @@ For the server, all you need are recent versions of Node.js and npm (refer to th
 Next, clone this repository into a directory of your choice. 
 
 ```bash
-git clone github.com/dolbyio-samples/blog-android-interview-app
+git clone github.com/dolbyio-samples/comms-app-android-video-chat-user-matching
 ```
 
 Then, in Android Studio, choose to import a project and navigate to where you cloned the project. Choose the android/ directory to open. To be able to fully use the app, you need to have a server running. See the localhost instructions below for a quick way to do some testing, or the more detailed guide below to deploy the server on Heroku. Either way, you'll need to change the URL variable the StringConstants file in the app code before running.  
